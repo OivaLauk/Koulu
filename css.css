@@ -1,0 +1,17 @@
+body {
+    background-color:lightcyan;
+    margin: 20px;
+}
+body:hover {
+    padding: 5px;
+}
+h1, h2, h3, p, li, label {
+    color: lightslategray;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+button {
+    margin-left: 750px;
+}
