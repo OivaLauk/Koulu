@@ -25,3 +25,7 @@ button {
     text-align: right;
 
 }
+
+* {
+    z-index: 1;
+}

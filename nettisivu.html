@@ -11,8 +11,45 @@
             }
             
         </style>
+        <style>
+            .popup {
+                border: 15px;
+                background-color: white;
+                z-index: 2;
+                height: 85px;
+                width: 300px;
+                text-align: center;
+                margin: auto;
+            }
+        </style>
+
     </head>
     <body>
+        <div class="myDiv">
+            Testailua
+        </div>    
+        <div class="popup"> 
+            <label>Kirjoita ikäsi</label>
+            <br>
+                <form action>
+                    <input id="age" type="number">
+                    <input type="button" value="Lähetä" onclick="ageCheck()">
+                </form>
+                <label id="label1"> </label>
+           <script>
+            function ageCheck(){
+                const age = document.getElementById("number")
+                if (age < 18) {
+                    vastaus = "Olet alaikäinen"
+                } else {
+                    vastaus = "Olet aikuinen"
+                }
+                document.getElementById("label1").innerHTML = vastaus;
+            }
+            </script>
+            
+
+        </div>
 
             <script src="js.js"></script>
         
@@ -24,9 +61,7 @@
 
             <button type="button" onclick="textChange()">Tekstin vaihto</button>
 
-        <div class="myDiv">
-            Testailua
-        </div>        
+    
 
 
 
@@ -63,5 +98,14 @@
                 <input type="text" id="eläin">
             </form>
         <a href="portfolio.html">Portfolio</a>
+        <br>
+        <p>Miten var, let ja const eroavat toisistaan:
+            <br>
+            Const voi olla arvo kuten 6, mutta sitä ei voi muuttaa sen jälkeen kun olet antanut sille arvon.
+            <br>
+            Let voi olla kahden muuttujan summa.
+            <br>
+            Var on vanha muuttuja jota pitäisi käyttää vain jos on pakko, var ja let ovat aika samanlaisia toiminnoltaan.
+        </p>
     </body>
 </html>
