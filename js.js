@@ -9,3 +9,4 @@ function colorChange() {
 function textChange() {
     document.getElementById("para2").innerHTML ="Toimii";
 }
+    

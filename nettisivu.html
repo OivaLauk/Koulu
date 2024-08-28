@@ -31,14 +31,14 @@
         <div class="popup"> 
             <label>Kirjoita ikäsi</label>
             <br>
-                <form action>
+                <form>
                     <input id="age" type="number">
-                    <input type="button" value="Lähetä" onclick="ageCheck()">
+                    <input type="button" value="Lähetä" onClick="ageCheck()">
                 </form>
                 <label id="label1"> </label>
            <script>
             function ageCheck(){
-                const age = document.getElementById("number")
+                const age = parseInt(document.getElementById("age").value);
                 if (age < 18) {
                     vastaus = "Olet alaikäinen"
                 } else {
