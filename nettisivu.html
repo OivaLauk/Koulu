@@ -107,5 +107,23 @@
             <br>
             Var on vanha muuttuja jota pitäisi käyttää vain jos on pakko, var ja let ovat aika samanlaisia toiminnoltaan.
         </p>
+        <p>Loop:</p>
+        <div id="output"></div>
+        
+        <p id="animaloutput"></p>
+        <script>
+        for (let i = 0; i < 5; i++) {
+            document.getElementById("output").innerHTML += "Huhuu?!<br>";
+        }
+        </script>
+        <script>
+             let animals = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"]
+                let animals2 = [];
+                for (let i = 0; i < animals.length; i++){
+                animals2.push(animals[i] + "!");
+        }
+            document.getElementById("animaloutput").innerHTML = animals2;
+        </script>
+        
     </body>
 </html>
