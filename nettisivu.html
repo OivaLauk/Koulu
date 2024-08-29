@@ -124,6 +124,23 @@
         }
             document.getElementById("animaloutput").innerHTML = animals2;
         </script>
-        
+        <script>
+            function personName() {
+                document.getElementById("etunimi")
+                document.getElementById("sukunimi")
+                const kokoNimi = etunimi + " " + sukunimi
+                const tervehdys = "Hei " + kokoNimi
+                document.getElementById("kokoNimi").innerHTML = tervehdys
+            }
+        </script>
+
+        <form>
+            <label>Kirjoita etunimesi:</label><br>
+            <input id="etunimi" type="text"><br>
+            <label>Kirjoita sukunimesi:</label><br>
+            <input id="sukunimi" type="text">
+            <button type="button" onClick="personName()">Lähetä</button>
+        </form>
+        <p id="kokoNimi"></p>
     </body>
 </html>
