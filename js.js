@@ -10,7 +10,7 @@ function textChange() {
     document.getElementById("para2").innerHTML ="Toimii";
 }
 
-document.ready(function () {
+function huhuu() {
     let sanat = ["Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!"];
 
     for (let i in sanat) {
@@ -18,4 +18,4 @@ document.ready(function () {
         element.innerHTML = tit[i];
         ("#tit").append(element);
     }
-});
+};
