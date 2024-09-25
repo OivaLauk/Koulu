@@ -3,7 +3,7 @@ body {
     margin: 20px;
 }
 
-}
+
 h1, h2, h3, p, li, label {
     color: lightslategray;
     font-family: sans-serif;
@@ -45,13 +45,6 @@ button {
     border-radius: 20px;
 }
 
-
-
- @media only screen and (max-width: 600px) {
-    #webpage {
-        background-color: white;
-    }
- }
 
  @media only screen and (min-width: 600px) {
     #webpage {
