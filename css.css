@@ -2,8 +2,7 @@ body {
     background-color:lightcyan;
     margin: 20px;
 }
-body:hover {
-    padding: 5px;
+
 }
 h1, h2, h3, p, li, label {
     color: lightslategray;
@@ -33,3 +32,50 @@ button {
 #nameButton {
     margin: auto;
 }
+
+#webpage {
+    height: max-content;
+    width: max-content;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(195, 221, 248);   
+}
+#webpage:hover {
+    border-radius: 20px;
+}
+
+
+
+ @media only screen and (max-width: 600px) {
+    #webpage {
+        background-color: white;
+    }
+ }
+
+ @media only screen and (min-width: 600px) {
+    #webpage {
+        background-color: red;
+    }  
+ }
+ 
+ @media only screen and (min-width: 768px) {
+    #webpage {
+        background-color: purple;
+    }   
+ }
+ 
+ @media only screen and (min-width: 992px) {
+    #webpage {
+        background-color: blue;
+    }   
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+    #webpage {
+        background-color: gray;
+    }
+    body {
+        opacity: 0%;
+    }   
+ } 

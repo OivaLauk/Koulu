@@ -10,11 +10,11 @@ function textChange() {
     document.getElementById("para2").innerHTML ="Toimii";
 }
 
-(document).ready(function () {
-    var sanat = ["Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!"];
+document.ready(function () {
+    let sanat = ["Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!"];
 
-    for (var i in sanat) {
-        var element = document.createElement("h2");
+    for (let i in sanat) {
+        let element = document.createElement("p");
         element.innerHTML = tit[i];
         ("#tit").append(element);
     }
