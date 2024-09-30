@@ -12,10 +12,24 @@ function textChange() {
 
 function huhuu() {
     let sanat = ["Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!", "Huhuu?!"];
+    console.log(sanat);
+    };
 
-    for (let i in sanat) {
-        let element = document.createElement("p");
-        element.innerHTML = tit[i];
-        ("#tit").append(element);
-    }
+//Vanha funktio etu- ja sukunimelle.
+/*
+function personName() {
+    kokoNimi = document.getElementById("etunimi").value + " " + document.getElementById("sukunimi").value;
+    const tervehdys = "Hei " + kokoNimi + "!";
+    document.getElementById("kokoNimi").innerHTML = tervehdys;
+};
+*/
+
+// Funktio etu- ja sukunimelle
+
+function personName(etuNimi, sukuNimi) {
+    etuNimi = document.getElementById("etunimi").value;
+    sukuNimi = document.getElementById("sukunimi").value;
+    let kokoNimi = etuNimi + " " + sukuNimi;
+    let tervehdys = "Hei " + kokoNimi + "!";
+    document.getElementById("kokoNimi").innerHTML = tervehdys;
 };
