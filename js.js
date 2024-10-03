@@ -32,4 +32,5 @@ function personName(etuNimi, sukuNimi) {
     let kokoNimi = etuNimi + " " + sukuNimi;
     let tervehdys = "Hei " + kokoNimi + "!";
     document.getElementById("kokoNimi").innerHTML = tervehdys;
+    return tervehdys;
 };
