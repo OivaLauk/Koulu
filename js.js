@@ -27,10 +27,9 @@ function personName() {
 // Funktio etu- ja sukunimelle
 
 function personName(etuNimi, sukuNimi) {
-    etuNimi = document.getElementById("etunimi").value;
-    sukuNimi = document.getElementById("sukunimi").value;
-    let kokoNimi = etuNimi + " " + sukuNimi;
-    let tervehdys = "Hei " + kokoNimi + "!";
-    document.getElementById("kokoNimi").innerHTML = tervehdys;
+     etuNimi = "Oiva";
+     sukuNimi = "Laukkanen";
+    const tervehdys = "Hei " + etuNimi + " " + sukuNimi;
     return tervehdys;
 };
+console.log(personName());
