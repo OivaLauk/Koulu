@@ -15,21 +15,18 @@ function huhuu() {
     console.log(sanat);
     };
 
-//Vanha funktio etu- ja sukunimelle.
-/*
-function personName() {
-    kokoNimi = document.getElementById("etunimi").value + " " + document.getElementById("sukunimi").value;
-    const tervehdys = "Hei " + kokoNimi + "!";
-    document.getElementById("kokoNimi").innerHTML = tervehdys;
-};
-*/
 
 // Funktio etu- ja sukunimelle
 
 function personName(etuNimi, sukuNimi) {
-     etuNimi = "Oiva";
-     sukuNimi = "Laukkanen";
     const tervehdys = "Hei " + etuNimi + " " + sukuNimi;
     return tervehdys;
 };
-console.log(personName());
+console.log(personName("Oiva", "Laukkanen"));
+
+function formInput(){
+    const etunimi = document.getElementById("etunimi").value;
+    const sukunimi = document.getElementById("sukunimi").value;
+    const loppuTervehdys = personName(etunimi, sukunimi);
+    document.getElementById("kokoNimi").innerHTML = loppuTervehdys;
+}
